@@ -1,0 +1,152 @@
+# Зависимости
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Переменные окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Логи
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Кеш runtime
+.npm
+.eslintcache
+
+# Папки покрытия тестов
+coverage/
+*.lcov
+
+# Инструменты анализа кода
+.nyc_output
+
+# Директория зависимостей node.js
+node_modules/
+jspm_packages/
+
+# Snowpack dependency directory (https://snowpack.dev/)
+web_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Кеш Optional npm
+.npm
+
+# Кеш Optional eslint
+.eslintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Вывод 'npm pack'
+*.tgz
+
+# Файл integrity для Yarn
+.yarn-integrity
+
+# Файл переменных окружения dotenv
+.env
+.env.test
+
+# Конфигурация parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
+
+# Кеш Next.js build output
+.next
+
+# Кеш Nuxt.js build / generate output
+.nuxt
+dist
+
+# Файлы Gatsby
+.cache/
+public
+
+# Директория зависимостей vuepress
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# Кеш FuseBox
+.fusebox/
+
+# Локальные файлы DynamoDB
+.dynamodb/
+
+# Файл порта TernJS
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Uploaded files
+uploads/
+temp/
+
+# Database files
+*.db
+*.sqlite
+
+# Redis dump
+dump.rdb
+
+# PM2 logs
+logs/
+
+# SSL certificates
+*.pem
+*.crt
+*.key
+
+# MongoDB data
+data/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test output
+test-results/
+coverage/

@@ -15,7 +15,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --foreground: #CBD1D3;
+    --foreground: #cbd1d3;
   }
 }
 
@@ -25,3 +25,85 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Custom media query for screens larger than 400px */
+@media (min-width: 400px) {
+  .page-container {
+    justify-content: center !important;
+    display: flex !important;
+  }
+}
+
+/* Custom breakpoint for 346px+ screens */
+@media (min-width: 346px) and (max-width: 767px) {
+  .custom-346\:h-\[600px\] {
+    height: 600px !important;
+  }
+}
+
+/* Custom breakpoint for screens up to 373px */
+@media (max-width: 373px) {
+  .reviews-small\:h-\[500px\] {
+    height: 500px !important;
+  }
+}
+
+/* Mobile logos wrap - force logos to new line on phones */
+@media (max-width: 767px) {
+  .reviews-logos-container {
+    flex-wrap: wrap;
+  }
+
+  .reviews-logos-container img {
+    margin-left: 0 !important;
+    margin-right: 24px !important;
+  }
+}
+
+/* Swiper slide fixed dimensions */
+.swiper-slide {
+  height: 685px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Mobile (320px - 767px) */
+@media (max-width: 767px) {
+  .swiper-slide {
+    width: 320px !important;
+    margin-right: 20px !important;
+  }
+
+  .swiper-slide:last-child {
+    margin-right: 0 !important;
+  }
+}
+
+/* Reviews swiper - override PC card swiper styles */
+.reviews-swiper .swiper-slide {
+  width: auto !important;
+  height: auto !important;
+  margin-right: 12px !important;
+}
+
+.reviews-swiper .swiper-slide:last-child {
+  margin-right: 0 !important;
+}
+
+/* Responsive margins for larger screens */
+@media (min-width: 360px) {
+  .reviews-swiper .swiper-slide {
+    margin-right: 16px !important;
+  }
+}
+
+.configurator-icon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(121, 81, 244, 0.3);
+}
+
+@media (min-width: 768px) {
+  .configurator-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+  }
+}

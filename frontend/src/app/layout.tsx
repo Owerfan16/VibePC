@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import { AuthProvider } from "../contexts/AuthContext";
 
 const roboto = Roboto({
   subsets: ["latin", "cyrillic"],
@@ -61,9 +62,11 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className={`${roboto.className} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <AuthProvider>
+          <Header />
+          {children}
+          <Footer />
+        </AuthProvider>
       </body>
     </html>
   );
